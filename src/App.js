@@ -128,6 +128,7 @@ function App() {
         <input
           type="number"
           value={amount}
+          oninput="this.value = this.value.replace(/[^0-9]/g, '');"
           onChange={handleChangeAmount}
           className={inputClass}
         />
